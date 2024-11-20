@@ -1,0 +1,16 @@
+digraph "/home/student/Документы/belov/client/source"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_3f0b1fdda61fb900a983b6e8555f3e3e {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="client", fontname="Helvetica", fontsize="10", URL="dir_3f0b1fdda61fb900a983b6e8555f3e3e.html"]
+  subgraph clusterdir_a4ed01691e589fc8345bdcf9e921ced8 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_a4ed01691e589fc8345bdcf9e921ced8.html"]
+    dir_a4ed01691e589fc8345bdcf9e921ced8 [shape=plaintext, label="source"];
+  dir_8c8d970c584697fa14ea5c49825dcad7 [shape=box, label="modules", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_8c8d970c584697fa14ea5c49825dcad7.html"];
+  }
+  }
+  dir_a4ed01691e589fc8345bdcf9e921ced8->dir_8c8d970c584697fa14ea5c49825dcad7 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000003.html"];
+}

@@ -1,0 +1,32 @@
+\hypertarget{network_8h_source}{}\doxysection{network.\+h}
+\label{network_8h_source}\index{/home/student/Документы/belov/client/source/modules/network.h@{/home/student/Документы/belov/client/source/modules/network.h}}
+\mbox{\hyperlink{network_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NETWORK\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NETWORK\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classNetworkManager}{NetworkManager}} \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{classNetworkManager_a730b351e724ecaad7e167f2baa8321cf}{NetworkManager}}(\textcolor{keyword}{const} std::string\& address, uint16\_t port);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetworkManager_afd4d6919e26a38a4b4aa28b655249aa6}{conn}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetworkManager_ab45985a4f06a98860d6f25911de5d36b}{auth}}(\textcolor{keyword}{const} std::string\& username, \textcolor{keyword}{const} std::string\& password);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{50     std::vector<uint64\_t> \mbox{\hyperlink{classNetworkManager_a44287bc22d62dc5320ca94ee3887a4cd}{calc}}(\textcolor{keyword}{const} std::vector<std::vector<uint64\_t>>\& data);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetworkManager_a20675a8cc89ecc69aedc8bc03085df69}{close}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keyword}{private}:}
+\DoxyCodeLine{58     \textcolor{keywordtype}{int} socket; }
+\DoxyCodeLine{59     std::string address; }
+\DoxyCodeLine{60     uint16\_t port; }
+\DoxyCodeLine{61 \};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// NETWORK\_H}}
+
+\end{DoxyCode}

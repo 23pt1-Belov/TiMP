@@ -1,0 +1,86 @@
+\begin{theindex}
+
+  \item {/home/student/Документы/belov/client/source/main.cpp}, 
+		\hyperpage{23}
+  \item {/home/student/Документы/belov/client/source/modules/exceptions.h}, 
+		\hyperpage{21}
+  \item {/home/student/Документы/belov/client/source/modules/io.h}, 
+		\hyperpage{22, 23}
+  \item {/home/student/Документы/belov/client/source/modules/network.h}, 
+		\hyperpage{19, 20}
+  \item {/home/student/Документы/belov/client/source/modules/ui.h}, 
+		\hyperpage{20, 21}
+
+  \indexspace
+
+  \item {ArgsDecodeException}, \hyperpage{7}
+  \item {auth}
+    \subitem {NetworkManager}, \hyperpage{16}
+  \item {AuthException}, \hyperpage{7}
+    \subitem {AuthException}, \hyperpage{7}
+
+  \indexspace
+
+  \item {BasicClientException}, \hyperpage{8}
+    \subitem {BasicClientException}, \hyperpage{8}
+    \subitem {what}, \hyperpage{9}
+
+  \indexspace
+
+  \item {calc}
+    \subitem {NetworkManager}, \hyperpage{16}
+  \item {conf}
+    \subitem {InputOutputManager}, \hyperpage{12}
+  \item {conn}
+    \subitem {NetworkManager}, \hyperpage{17}
+
+  \indexspace
+
+  \item {DataDecodeException}, \hyperpage{9}
+    \subitem {DataDecodeException}, \hyperpage{9}
+
+  \indexspace
+
+  \item {InputOutputException}, \hyperpage{10}
+    \subitem {InputOutputException}, \hyperpage{10}
+  \item {InputOutputManager}, \hyperpage{11}
+    \subitem {conf}, \hyperpage{12}
+    \subitem {InputOutputManager}, \hyperpage{11}
+    \subitem {read}, \hyperpage{12}
+    \subitem {write}, \hyperpage{12}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{24}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{24}
+
+  \indexspace
+
+  \item {NetworkException}, \hyperpage{14}
+    \subitem {NetworkException}, \hyperpage{14}
+  \item {NetworkManager}, \hyperpage{15}
+    \subitem {auth}, \hyperpage{16}
+    \subitem {calc}, \hyperpage{16}
+    \subitem {conn}, \hyperpage{17}
+    \subitem {NetworkManager}, \hyperpage{15}
+
+  \indexspace
+
+  \item {read}
+    \subitem {InputOutputManager}, \hyperpage{12}
+
+  \indexspace
+
+  \item {UserInterface}, \hyperpage{17}
+    \subitem {UserInterface}, \hyperpage{17}
+
+  \indexspace
+
+  \item {what}
+    \subitem {BasicClientException}, \hyperpage{9}
+  \item {write}
+    \subitem {InputOutputManager}, \hyperpage{12}
+
+\end{theindex}

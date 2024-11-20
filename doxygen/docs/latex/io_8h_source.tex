@@ -1,0 +1,35 @@
+\hypertarget{io_8h_source}{}\doxysection{io.\+h}
+\label{io_8h_source}\index{/home/student/Документы/belov/client/source/modules/io.h@{/home/student/Документы/belov/client/source/modules/io.h}}
+\mbox{\hyperlink{io_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef IO\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define IO\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}exceptions.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classInputOutputManager}{InputOutputManager}} \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{classInputOutputManager_a1a533fb70961e7a8a8493b1704a3cdf8}{InputOutputManager}}(}
+\DoxyCodeLine{31         \textcolor{keyword}{const} std::string\& path\_to\_conf, }
+\DoxyCodeLine{32         \textcolor{keyword}{const} std::string\& path\_to\_in, }
+\DoxyCodeLine{33         \textcolor{keyword}{const} std::string\& path\_to\_out}
+\DoxyCodeLine{34     );}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41     std::array<std::string, 2> \mbox{\hyperlink{classInputOutputManager_a3d89dcaf297a66bb61474609e4ea289e}{conf}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48     std::vector<std::vector<uint64\_t>> \mbox{\hyperlink{classInputOutputManager_a8b50309af5d4eb2f17b9b0758655593c}{read}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInputOutputManager_a892bbe50d862b12656806b7debc97308}{write}}(\textcolor{keyword}{const} std::vector<uint64\_t>\& data);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keyword}{private}:}
+\DoxyCodeLine{58     std::string path\_to\_conf; }
+\DoxyCodeLine{59     std::string path\_to\_in; }
+\DoxyCodeLine{60     std::string path\_to\_out; }
+\DoxyCodeLine{61 \};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// IO\_H}}
+
+\end{DoxyCode}

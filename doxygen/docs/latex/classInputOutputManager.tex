@@ -1,0 +1,112 @@
+\hypertarget{classInputOutputManager}{}\doxysection{Класс Input\+Output\+Manager}
+\label{classInputOutputManager}\index{InputOutputManager@{InputOutputManager}}
+
+
+Класс для управления вводом и выводом данных.  
+
+
+
+
+{\ttfamily \#include $<$io.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInputOutputManager_a1a533fb70961e7a8a8493b1704a3cdf8}{Input\+Output\+Manager}} (const std\+::string \&path\+\_\+to\+\_\+conf, const std\+::string \&path\+\_\+to\+\_\+in, const std\+::string \&path\+\_\+to\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classInputOutputManager}{Input\+Output\+Manager}}. \end{DoxyCompactList}\item 
+std\+::array$<$ std\+::string, 2 $>$ \mbox{\hyperlink{classInputOutputManager_a3d89dcaf297a66bb61474609e4ea289e}{conf}} ()
+\begin{DoxyCompactList}\small\item\em Метод для чтения конфигурационных данных. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ uint64\+\_\+t $>$ $>$ \mbox{\hyperlink{classInputOutputManager_a8b50309af5d4eb2f17b9b0758655593c}{read}} ()
+\begin{DoxyCompactList}\small\item\em Метод для чтения данных из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInputOutputManager_a892bbe50d862b12656806b7debc97308}{write}} (const std\+::vector$<$ uint64\+\_\+t $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Метод для записи данных в файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления вводом и выводом данных. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classInputOutputManager_a1a533fb70961e7a8a8493b1704a3cdf8}\label{classInputOutputManager_a1a533fb70961e7a8a8493b1704a3cdf8}} 
+\index{InputOutputManager@{InputOutputManager}!InputOutputManager@{InputOutputManager}}
+\index{InputOutputManager@{InputOutputManager}!InputOutputManager@{InputOutputManager}}
+\doxysubsubsection{\texorpdfstring{InputOutputManager()}{InputOutputManager()}}
+{\footnotesize\ttfamily Input\+Output\+Manager\+::\+Input\+Output\+Manager (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path\+\_\+to\+\_\+conf,  }\item[{const std\+::string \&}]{path\+\_\+to\+\_\+in,  }\item[{const std\+::string \&}]{path\+\_\+to\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classInputOutputManager}{Input\+Output\+Manager}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+\_\+to\+\_\+conf} & Путь к файлу конфигурации. \\
+\hline
+{\em path\+\_\+to\+\_\+in} & Путь к входному файлу. \\
+\hline
+{\em path\+\_\+to\+\_\+out} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classInputOutputManager_a3d89dcaf297a66bb61474609e4ea289e}\label{classInputOutputManager_a3d89dcaf297a66bb61474609e4ea289e}} 
+\index{InputOutputManager@{InputOutputManager}!conf@{conf}}
+\index{conf@{conf}!InputOutputManager@{InputOutputManager}}
+\doxysubsubsection{\texorpdfstring{conf()}{conf()}}
+{\footnotesize\ttfamily std\+::array$<$ std\+::string, 2 $>$ Input\+Output\+Manager\+::conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для чтения конфигурационных данных. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classInputOutputException}{Input\+Output\+Exception}},\mbox{\hyperlink{classDataDecodeException}{Data\+Decode\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Возвращает}
+Массив строк с конфигурационными данными. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInputOutputManager_a8b50309af5d4eb2f17b9b0758655593c}\label{classInputOutputManager_a8b50309af5d4eb2f17b9b0758655593c}} 
+\index{InputOutputManager@{InputOutputManager}!read@{read}}
+\index{read@{read}!InputOutputManager@{InputOutputManager}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ uint64\+\_\+t $>$ $>$ Input\+Output\+Manager\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для чтения данных из файла. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classInputOutputException}{Input\+Output\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Возвращает}
+Двумерный вектор с данными. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInputOutputManager_a892bbe50d862b12656806b7debc97308}\label{classInputOutputManager_a892bbe50d862b12656806b7debc97308}} 
+\index{InputOutputManager@{InputOutputManager}!write@{write}}
+\index{write@{write}!InputOutputManager@{InputOutputManager}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Input\+Output\+Manager\+::write (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint64\+\_\+t $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Метод для записи данных в файл. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classInputOutputException}{Input\+Output\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор данных для записи. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/belov/client/source/modules/\mbox{\hyperlink{io_8h}{io.\+h}}\item 
+/home/student/Документы/belov/client/source/modules/io.\+cpp\end{DoxyCompactItemize}

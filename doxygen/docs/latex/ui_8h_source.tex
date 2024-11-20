@@ -1,0 +1,40 @@
+\hypertarget{ui_8h_source}{}\doxysection{ui.\+h}
+\label{ui_8h_source}\index{/home/student/Документы/belov/client/source/modules/ui.h@{/home/student/Документы/belov/client/source/modules/ui.h}}
+\mbox{\hyperlink{ui_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef UI\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define UI\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{io_8h}{io.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{network_8h}{network.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}exceptions.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classUserInterface}{UserInterface}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{classUserInterface_af5a272b85b1f81b24245f3ce68e6421a}{UserInterface}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{37     \mbox{\hyperlink{classUserInterface_ae588b2ff1711a016dd4c6fc5002c0841}{\string~UserInterface}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUserInterface_a6d8d6d6b6900823be51259efba78b400}{run}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{private}:}
+\DoxyCodeLine{45     std::string address;        }
+\DoxyCodeLine{46     uint16\_t port;              }
+\DoxyCodeLine{47     std::string input\_path;     }
+\DoxyCodeLine{48     std::string output\_path;    }
+\DoxyCodeLine{49     std::string config\_path;    }
+\DoxyCodeLine{50     \mbox{\hyperlink{classInputOutputManager}{InputOutputManager}} *io\_man; }
+\DoxyCodeLine{51     \mbox{\hyperlink{classNetworkManager}{NetworkManager}} *net\_man;    }
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} help\_flag;             }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} parseArgs(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} showHelp();}
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// UI\_H}}
+
+\end{DoxyCode}

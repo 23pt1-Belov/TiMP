@@ -1,0 +1,117 @@
+\hypertarget{classNetworkManager}{}\doxysection{Класс Network\+Manager}
+\label{classNetworkManager}\index{NetworkManager@{NetworkManager}}
+
+
+Класс для управления сетевым подключением и взаимодействием.  
+
+
+
+
+{\ttfamily \#include $<$network.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNetworkManager_a730b351e724ecaad7e167f2baa8321cf}{Network\+Manager}} (const std\+::string \&address, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classNetworkManager}{Network\+Manager}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_afd4d6919e26a38a4b4aa28b655249aa6}{conn}} ()
+\begin{DoxyCompactList}\small\item\em Метод для установления сетевого подключения. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_ab45985a4f06a98860d6f25911de5d36b}{auth}} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Метод для аутентификации пользователя. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint64\+\_\+t $>$ \mbox{\hyperlink{classNetworkManager_a44287bc22d62dc5320ca94ee3887a4cd}{calc}} (const std\+::vector$<$ std\+::vector$<$ uint64\+\_\+t $>$ $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Метод для передачи данных и получения результата. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetworkManager_a20675a8cc89ecc69aedc8bc03085df69}\label{classNetworkManager_a20675a8cc89ecc69aedc8bc03085df69}} 
+void {\bfseries close} ()
+\begin{DoxyCompactList}\small\item\em Метод для закрытия сетевого подключения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления сетевым подключением и взаимодействием. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classNetworkManager_a730b351e724ecaad7e167f2baa8321cf}\label{classNetworkManager_a730b351e724ecaad7e167f2baa8321cf}} 
+\index{NetworkManager@{NetworkManager}!NetworkManager@{NetworkManager}}
+\index{NetworkManager@{NetworkManager}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{NetworkManager()}{NetworkManager()}}
+{\footnotesize\ttfamily Network\+Manager\+::\+Network\+Manager (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{address,  }\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classNetworkManager}{Network\+Manager}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Адрес сервера. \\
+\hline
+{\em port} & Порт сервера. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classNetworkManager_ab45985a4f06a98860d6f25911de5d36b}\label{classNetworkManager_ab45985a4f06a98860d6f25911de5d36b}} 
+\index{NetworkManager@{NetworkManager}!auth@{auth}}
+\index{auth@{auth}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily void Network\+Manager\+::auth (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Метод для аутентификации пользователя. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classAuthException}{Auth\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+{\em password} & Пароль. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetworkManager_a44287bc22d62dc5320ca94ee3887a4cd}\label{classNetworkManager_a44287bc22d62dc5320ca94ee3887a4cd}} 
+\index{NetworkManager@{NetworkManager}!calc@{calc}}
+\index{calc@{calc}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily std\+::vector$<$ uint64\+\_\+t $>$ Network\+Manager\+::calc (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ uint64\+\_\+t $>$ $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Метод для передачи данных и получения результата. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkException}{Network\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Данные для обработки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результаты обработки данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetworkManager_afd4d6919e26a38a4b4aa28b655249aa6}\label{classNetworkManager_afd4d6919e26a38a4b4aa28b655249aa6}} 
+\index{NetworkManager@{NetworkManager}!conn@{conn}}
+\index{conn@{conn}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{conn()}{conn()}}
+{\footnotesize\ttfamily void Network\+Manager\+::conn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для установления сетевого подключения. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkException}{Network\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/belov/client/source/modules/\mbox{\hyperlink{network_8h}{network.\+h}}\item 
+/home/student/Документы/belov/client/source/modules/network.\+cpp\end{DoxyCompactItemize}
